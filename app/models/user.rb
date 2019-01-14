@@ -5,6 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   def self.random(user_id)
-    User.where('id != ?', user_id).order("random()").limit(1)
+    User.where('id != ?', user_id).order("random()").limit(1).first
   end
 end
