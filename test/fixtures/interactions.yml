@@ -1,13 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  user_one_id: 1
-  user_two_id: MyString
-  integer: MyString
-  like: false
+  user_one: one
+  user_two: two
+  like: true
 
-two:
-  user_one_id: 1
-  user_two_id: MyString
-  integer: MyString
-  like: false

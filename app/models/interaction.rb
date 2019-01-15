@@ -12,7 +12,7 @@ class Interaction < ApplicationRecord
                              user_two: sender,
                              like: true)
                       .any?
-            Match.create(ser_one: sender, user_two: receiver)
+            Match.create(user_one: sender, user_two: receiver)
         end
     end
 end
