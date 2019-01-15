@@ -10,7 +10,7 @@ class InteractionTest < ActiveSupport::TestCase
     sender = users(:one)
     receiver = users(:two)
     interaction = Interaction.new(user_one: receiver, user_two: sender, like: true).save!
-    assert_equal Match.count, 1
+    assert_equal 1, Match.count
   end
 
 end
