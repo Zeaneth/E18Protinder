@@ -4,6 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  has_many :interactions_one, class_name: 'Interaction', foreign_key: :user_one_id
+  has_many :interactions_two, class_name: 'Interaction', foreign_key: :user_two_id
+
   def self.random(user_id)
     User.where('id != ?', user_id).order("random()").limit(1).first
   end
