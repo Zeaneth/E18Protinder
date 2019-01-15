@@ -1,2 +1,3 @@
 <%= @user.email %>
 <%= link_to "like", interactions_path(user_two_id: @user.id, like: true), method: :post %>
+<%= link_to "dislike", interactions_path(user_two_id: @user.id, like: false), method: :post %>

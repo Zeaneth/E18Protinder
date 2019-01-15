@@ -9,5 +9,7 @@ one: {
 }
 # column: value
 #
-two: {}
+two: {
+  email: 'likeidea@gmail.com'
+}
 # column: value
